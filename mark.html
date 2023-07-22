@@ -1,0 +1,72 @@
+<!-- Create a ranking calculator where the user enters students name, total marks.
+The output should sort the students based on marks. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATE RANK OF STUDENTS</title>
+    <link rel="stylesheet" href="studentrank.css">
+  </head>
+  <body>
+    <div class="main">
+    <div class="container">
+      <h1>CALCULATE RANK OF STUDENTS</h1>
+      <form action="" id="form">
+
+        <div>
+          <label for="name">enter the name student</label>
+          <input
+            class="input"
+            type="text"
+            placeholder="Enter Name"
+            required
+            id="name"
+          />
+        </div>
+
+        <div>
+          <label for="marks">enter mark of students </label>
+          <input
+            class="input"
+            type="number"
+            name="marks"
+            placeholder="Enter Marks"
+            required
+            min="15"
+            max="100"
+            id="marks"
+          />
+        </div>
+
+        <input type="submit" id="btn"  value ="Add Student"/>
+        <input type="button" value="sort" id="sort" />
+
+        
+      </form>
+      </div>
+      
+
+      <section class="table-section">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Total Marks</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </section>
+    </div>
+    <div>
+            <ul id="ul">
+
+            </ul>
+        </div>
+
+    <script src="studentRank.js"></script>
+  </body>
+</html>
